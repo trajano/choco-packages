@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<id>
+			eclipse
+		</id>
+		<version>
+			4.6.2
+		</version>
+		<packageSourceUrl>
+			https://github.com/trajano/choco-packages
+		</packageSourceUrl>
+		<owners>
+			Archimedes Trajano
+		</owners>
+		<title>
+			Eclipse IDE for Java EE Developers
+		</title>
+		<authors>
+			Eclipse Foundation
+		</authors>
+		<projectUrl>
+			http://www.eclipse.org/neon/
+		</projectUrl>
+		<iconUrl>
+			http://cdn.rawgit.com/trajano/choco/master/eclipse/eclipse.ico
+		</iconUrl>
+		<copyright>
+			2017
+		</copyright>
+		<licenseUrl>
+			https://www.eclipse.org/legal/epl-v10.html
+		</licenseUrl>
+		<requireLicenseAcceptance>
+			true
+		</requireLicenseAcceptance>
+		<projectSourceUrl>
+			https://git.eclipse.org/
+		</projectSourceUrl>
+		<docsUrl>
+			http://help.eclipse.org/
+		</docsUrl>
+		<mailingListUrl>
+			http://www.eclipse.org/mail/
+		</mailingListUrl>
+		<bugTrackerUrl>
+			https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EPP&amp;component=jee-package
+		</bugTrackerUrl>
+		<tags>
+			eclipse java-ee ide java
+		</tags>
+		<summary>
+			Tools for Java developers creating Java EE and Web applications, including a Java IDE, tools for Java EE, JPA, JSF, Mylyn, EGit and others.
+		</summary>
+		<description>
+			This package includes:
+			
+			* Data Tools Platform
+			* Eclipse Git Team Provider
+			* Eclipse Java Development Tools
+			* Eclipse Java EE Developer Tools
+			* JavaScript Development Tools
+			* Maven Integration for Eclipse
+			* Mylyn Task List
+			* Eclipse Plug-in Development Environment
+			* Remote System Explorer
+			* Recommenders Tools for Java Developers
+			* Eclipse XML Editors and Tools
+		</description>
+		<dependencies>
+			<dependency id="jdk8" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>
