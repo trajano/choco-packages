@@ -24,5 +24,19 @@ foreach ($file in get-childitem  $eclipseFolder -include *.exe -exclude eclipse.
   New-Item "$file.ignore" -type file -force | Out-Null
 }
 
+# Update the eclipse.ini so it has the JAVA_HOME which is set by `jdk`
+$eclipseIni = Join-Path $eclipseFolder "eclipse.ini"
+$eclipseIniContents = Get-content $eclipseIni
+Remove-Item $eclipseIni
+
+foreach ($line in $eclipseIniContents) {
+  if ($line -eq "-vmargs") {
+    # found vmargs line so stop here and add the vm line before it
+    Add-Content -Path $eclipseIni -Value "-vm"
+    Add-Content -Path $eclipseIni -Value "$env:JAVA_HOME/jre/bin/server/jvm.dll"
+  }
+  Add-Content -Path $eclipseIni -Value $line
+}
+
 Install-ChocolateyShortcut  -ShortcutFilePath $shortcut -TargetPath (Join-Path $eclipseFolder "eclipse.exe")
 # DO NOT -PinToTaskbar true because using that shortcut will create a second taskbar icon
