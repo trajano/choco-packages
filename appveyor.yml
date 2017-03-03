@@ -4,14 +4,14 @@ branches:
   - master
 environment:
   matrix:
-  - deps: jdk8
-    package: eclipse
+  - package: eclipse
+  - local_deps: eclipse
+    package: eclipse-eclemma
   - package: graphviz
   - package: strings
 install:
-- ps: $env:deps  -Split " " | Foreach { cinst "$_" }
-- ps: $env:local_deps  -Split " " | Foreach { cd "c:\choco-packages\$_" ; cinst ".\$_.nuspec" }
+- ps: if ($env:local_deps) { $env:local_deps  -Split ";" | Foreach { choco pack "c:\choco-packages\$_\$_.nuspec" --outputdirectory $pwd } }
 build_script:
-- ps: cd "c:\choco-packages\$env:package"
-- ps: choco install ".\$env:package.nuspec"
+- ps: choco pack "c:\choco-packages\$env:package\$env:package.nuspec" --outputdirectory $pwd
+- ps: choco install -source "'.;chocolatey'" $env:package
 - ps: choco uninstall $env:package
