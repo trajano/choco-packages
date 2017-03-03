@@ -23,6 +23,10 @@ The `matrix` section of appveyor.yml takes in a list containing the following:
 * `package` which states the name of the package, it corresponds to the package folder that has a `.nuspec` with the same name.
 * `local_deps` is an optional `;` separated list of packages that are provided by this project and need to have a pack created first.
 
+## Pull requests
+
+The package name (which is listed in `appveyor.yml` and the title the pull request (case insensitive) must be the same and only the pull request package will be tested on AppVeyor.  Non-pull requests will have all packages tested.
+
 ## Packages
 
 The following is a list of my packages and how they differ from the [officially maintained Chocolatey packages](https://chocolatey.org/packages/).
