@@ -1,0 +1,17 @@
+clone_folder: c:\choco-packages
+branches:
+  only:
+  - master
+environment:
+  matrix:
+  - deps: jdk8
+    package: eclipse
+  - package: graphviz
+  - package: strings
+install:
+- ps: $env:deps  -Split " " | Foreach { cinst "$_" }
+- ps: $env:local_deps  -Split " " | Foreach { cd "c:\choco-packages\$_" ; cinst ".\$_.nuspec" }
+build_script:
+- ps: cd "c:\choco-packages\$env:package"
+- ps: choco install ".\$env:package.nuspec"
+- ps: choco uninstall $env:package
