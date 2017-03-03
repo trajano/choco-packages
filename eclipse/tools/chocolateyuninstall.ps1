@@ -1,3 +1,3 @@
-﻿. "$env:chocolateyPackageFolder/globals.ps1"
+﻿. "$env:chocolateyPackageFolder/tools/globals.ps1"
 
 Remove-Item $shortcut
