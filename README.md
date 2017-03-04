@@ -33,6 +33,13 @@ The following is a list of my packages and how they differ from the [officially 
 
 * `eclipse` uses Neon.2 (i.e. 4.6.2) puts the code into `C:\ProgramFiles\Chocolatey\lib\eclipse`
 * `eclipse-eclemma` depends on `eclipse` and puts the necessary files into the `dropins` folder.  This provides a sample of how to add plugins into an Eclipse installation.
-* `geforrce-game-ready-driver-win10` uses the approach of changing the configuration file rather than deleting the folders and prevents the GeForce Experience, NVidia Update, NView and 3D Vision from being installed.
+* `geforce-game-ready-driver-win10` uses the approach of changing the configuration file rather than deleting the folders and prevents the GeForce Experience, NVidia Update, NView and 3D Vision from being installed.
 * `graphviz` uses the zip file install and puts in the proper command line shims.
+* `megacmd` MEGAcmd
+* `megasync` MEGAsync
 * `strings` updated to the current version and only keeps the one specific for the architecture.
+
+The following packages are not tested in AppVeyor:
+
+* `geforce-game-ready-driver-win10`
+* `megasync`
