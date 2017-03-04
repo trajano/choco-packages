@@ -8,7 +8,7 @@ environment:
   - local_deps: eclipse
     package: eclipse-eclemma
   - package: graphviz
-  - package: megasync
+  - package: megacmd
   - package: strings
 install:
 - ps: if ($env:local_deps) { $env:local_deps  -Split ";" | Foreach { choco pack "c:\choco-packages\$_\$_.nuspec" --outputdirectory $pwd } }
