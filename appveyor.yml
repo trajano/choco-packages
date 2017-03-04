@@ -8,10 +8,11 @@ environment:
   - local_deps: eclipse
     package: eclipse-eclemma
   - package: graphviz
+  - package: megacmd
   - package: strings
 install:
 - ps: if ($env:local_deps) { $env:local_deps  -Split ";" | Foreach { choco pack "c:\choco-packages\$_\$_.nuspec" --outputdirectory $pwd } }
 build_script:
 - ps: choco pack "c:\choco-packages\$env:package\$env:package.nuspec" --outputdirectory $pwd
-- ps: choco install -source "'.;chocolatey'" $env:package
-- ps: choco uninstall $env:package
+- ps: if ($env:APPVEYOR_PULL_REQUEST_TITLE -eq $null -or $env:APPVEYOR_PULL_REQUEST_TITLE -eq $env:package) { choco install -source "'.;chocolatey'" $env:package  }
+- ps: if ($env:APPVEYOR_PULL_REQUEST_TITLE -eq $null -or $env:APPVEYOR_PULL_REQUEST_TITLE -eq $env:package) { choco uninstall $env:package  }
