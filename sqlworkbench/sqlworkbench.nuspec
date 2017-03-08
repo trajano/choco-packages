@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<id>
+			sqlworkbench
+		</id>
+		<version>
+			122.1
+		</version>
+		<packageSourceUrl>
+			https://github.com/trajano/choco-packages
+		</packageSourceUrl>
+		<owners>
+			Archimedes Trajano
+		</owners>
+		<title>
+			SQL Workbench/J
+		</title>
+		<authors>
+			Thomas Kellerer
+		</authors>
+		<projectUrl>
+			http://www.sql-workbench.net/
+		</projectUrl>
+		<copyright>
+			2017
+		</copyright>
+		<licenseUrl>
+			http://www.sql-workbench.net/manual/license.html
+		</licenseUrl>
+		<requireLicenseAcceptance>
+			true
+		</requireLicenseAcceptance>
+		<projectSourceUrl>
+			http://sqlworkbench.mgm-tp.com/viewvc/
+		</projectSourceUrl>
+		<bugTrackerUrl>
+			http://www.sql-workbench.net/support.html
+		</bugTrackerUrl>
+		<tags>
+			sql java database
+		</tags>
+		<summary>
+			SQL Workbench/J is a free, DBMS-independent, cross-platform SQL query tool. It is written in Java and should run on any operating system that provides a Java Runtime Environment.
+		</summary>
+		<description>
+			SQL Workbench/J is a free, DBMS-independent, cross-platform SQL query tool. It is written in Java and should run on any operating system that provides a Java Runtime Environment.
+
+			Its main focus is on running SQL scripts (either interactively or as a batch) and export/import features. Graphical query building or more advanced DBA tasks are not the focus and are not planned.
+		</description>
+		<dependencies>
+			<dependency id="jdk8" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>
