@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName   = $env:chocolateyPackageName
   unzipLocation = $env:chocolateyPackageFolder
 
-  url           = 'http://www.sql-workbench.net/Workbench-Build122.zip'
+  url           = 'http://sql-workbench.net/archive/Workbench-Build122.zip'
   checksum      = '97A7C5628C0F18FFCDBD624D932F25E28DB1901CB6DCD1D6468D8311089777FE64E157FAB44FAE64B14FA98C503210471FE60B93348C5977F1A61EA653BF6D2E'
   checksumType  = 'sha512'
 }
