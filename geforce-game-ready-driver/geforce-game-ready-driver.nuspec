@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
 		<id>
-			geforce-game-ready-driver-win10
+			geforce-game-ready-driver
 		</id>
 		<title>
-			Geforce Game Ready Driver for Windows 10
+			Geforce Game Ready Driver
 		</title>
 		<version>
-			378.66
+			378.78
 		</version>
 		<authors>
 			NVIDIA
@@ -21,12 +21,12 @@
 		</summary>
 		<description>
 			GeForce Game Ready Driver
-			
+
 			This GeForce Game Ready driver ensures you'll have the best possible gaming experience. With support for GeForce SLI technology and one-click game setting optimizations within GeForce Experience, you'll have the best possible performance and image quality during gameplay.
-			
+
 			Game Ready
 			Best gaming experience, including support for SLI Technology and GeForce Experience 1-click optimizations
-			
+
 			Supported:
 			GeForce 10 Series
 			NVIDIA TITAN X (Pascal), GeForce GTX 1080, GeForce GTX 1070, GeForce GTX 1060
@@ -40,7 +40,7 @@
 			GeForce GTX 590, GeForce GTX 580, GeForce GTX 570, GeForce GTX 560 Ti, GeForce GTX 560 SE, GeForce GTX 560, GeForce GTX 555, GeForce GTX 550 Ti, GeForce GT 545, GeForce GT 530, GeForce GT 520, GeForce 510
 			GeForce 400 Series
 			GeForce GTX 480, GeForce GTX 470, GeForce GTX 465, GeForce GTX 460 SE v2, GeForce GTX 460 SE, GeForce GTX 460, GeForce GTS 450, GeForce GT 440, GeForce GT 430, GeForce GT 420
-			
+
 			If your GPU is not supported, try this:
 			https://chocolatey.org/packages/geforce-driver
 		</description>
