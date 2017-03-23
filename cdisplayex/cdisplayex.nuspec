@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<id>
+			megacmd
+		</id>
+		<version>
+			2.53
+		</version>
+		<packageSourceUrl>
+			https://github.com/trajano/choco-packages
+		</packageSourceUrl>
+		<owners>
+			Archimedes Trajano
+		</owners>
+		<title>
+			MEGAcmd
+		</title>
+		<authors>
+			MEGA
+		</authors>
+		<projectUrl>
+			https://mega.nz/
+		</projectUrl>		<projectSourceUrl>
+			https://github.com/meganz/sdk
+		</projectSourceUrl>
+		<copyright>
+			2017
+		</copyright>
+		<licenseUrl>
+			https://technet.microsoft.com/en-us/sysinternals/bb469936
+		</licenseUrl>
+		<requireLicenseAcceptance>
+			true
+		</requireLicenseAcceptance>
+		<tags>
+			text strings
+		</tags>
+		<description>
+			Working on NT and Win2K means that executables and object files will many times have embedded UNICODE strings that you cannot easily see with a standard ASCII strings or grep programs. So we decided to roll our own. Strings just scans the file you pass it for UNICODE (or ASCII) strings of a default length of 3 or more UNICODE (or ASCII) characters. Note that it works under Windows 95 as well.
+		</description>
+		<dependencies>
+			<dependency id="innounp" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>

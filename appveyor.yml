@@ -4,6 +4,7 @@ branches:
   - master
 environment:
   matrix:
+  - package: cdisplayex
   - package: eclipse
   - local_deps: eclipse
     package: eclipse-eclemma
