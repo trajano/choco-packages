@@ -7,6 +7,8 @@ environment:
   - package: eclipse
   - local_deps: eclipse
     package: eclipse-eclemma
+  - local_deps: eclipse
+    package: jd-eclipse
   - package: graphviz
   - package: megacmd
   - package: sqlworkbench
