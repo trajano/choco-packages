@@ -13,10 +13,9 @@ I am not a package maintainer for Chocolatey please use the official channels fo
 
 1. Clone this repository
 2. Install choco
-3. Run `.\pack.ps1` in a Powershell prompt to create the packages
-4. Add the source using the following command`choco source add --name "Trajano Choco-Packages" -s <directory>`
-5. `choco install <package name>` to install 
-6. `choco uninstall <package name>` to uninstall
+3. Run `.\pack.ps1` in a Powershell prompt to create the packages and add the source
+4. `choco install <package name>` to install 
+5. `choco uninstall <package name>` to uninstall
 
 ## Adding to appveyor.yml
 
