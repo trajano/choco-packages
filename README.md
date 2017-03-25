@@ -31,9 +31,11 @@ The package name (which is listed in `appveyor.yml` and the title the pull reque
 
 The following is a list of my packages and how they differ from the [Chocolatey community maintained packages][].
 
-* `eclipse` uses Neon.2 (i.e. 4.6.2) puts the code into `C:\ProgramFiles\Chocolatey\lib\eclipse`, sets the JVM to use the DLL in `jdk` package.
+* `corsair-cue2` Corsair CUE2. **This package is not in [Chocolatey community maintained packages]**
+* `eclipse` uses Neon.3 (i.e. 4.6.3) puts the code into `C:\ProgramFiles\Chocolatey\lib\eclipse`, sets the JVM to use the DLL in `jdk` package.
 * `eclipse-eclemma` depends on `eclipse` and puts the necessary files into the `dropins` folder.  This provides a sample of how to add plugins into an Eclipse installation.  **This package is not in [Chocolatey community maintained packages]**
-* `geforce-game-ready-driver-win10` uses the approach of changing the configuration file rather than deleting the folders and prevents the GeForce Experience, NVidia Update, NView and 3D Vision from being installed.
+* `jd-eclipse` depends on `eclipse` and puts the necessary files into the `dropins` folder.  This provides a sample of how to add plugins into an Eclipse installation.  **This package is not in [Chocolatey community maintained packages]**
+* `geforce-game-ready-driver` uses the approach of changing the configuration file rather than deleting the folders and prevents the GeForce Experience, NVidia Update, NView and 3D Vision from being installed.
 * `graphviz` uses the zip file install and puts in the proper command line shims.
 * `megacmd` MEGAcmd. **This package is not in [Chocolatey community maintained packages]**
 * `megasync` MEGAsync. **This package is not in [Chocolatey community maintained packages]**
@@ -42,7 +44,8 @@ The following is a list of my packages and how they differ from the [Chocolatey 
 
 The following packages are not tested in AppVeyor:
 
-* `geforce-game-ready-driver-win10`
+* `corsair-cue2`
+* `geforce-game-ready-driver`
 * `megasync`
 
 [Chocolatey community maintained packages]: https://chocolatey.org/packages/
