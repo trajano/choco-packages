@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<id>
+			jd-gui
+		</id>
+		<version>
+			1.4.0
+		</version>
+		<packageSourceUrl>
+			https://github.com/trajano/choco-packages
+		</packageSourceUrl>
+		<owners>
+			Archimedes Trajano
+		</owners>
+		<title>
+			JD-GUI
+		</title>
+		<authors>
+			emmanue1
+		</authors>
+		<projectUrl>
+			http://jd.benow.ca/
+		</projectUrl>
+		<copyright>
+			2017
+		</copyright>
+		<licenseUrl>
+			https://github.com/java-decompiler/jd-gui/blob/master/LICENSE
+		</licenseUrl>
+		<requireLicenseAcceptance>
+			true
+		</requireLicenseAcceptance>
+		<projectSourceUrl>
+			https://github.com/java-decompiler/jd-gui
+		</projectSourceUrl>
+		<bugTrackerUrl>
+			https://github.com/java-decompiler/jd-gui/issues
+		</bugTrackerUrl>
+		<tags>
+			java decompiler
+		</tags>
+		<summary>
+			JD-GUI is a standalone graphical utility that displays Java source codes of “.class” files. You can browse the reconstructed source code with the JD-GUI for instant access to methods and fields.
+		</summary>
+		<description>
+			JD-GUI is a standalone graphical utility that displays Java source codes of “.class” files. You can browse the reconstructed source code with the JD-GUI for instant access to methods and fields.
+		</description>
+		<dependencies>
+			<dependency id="jdk8" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>

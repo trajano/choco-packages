@@ -29,7 +29,7 @@
 			2017
 		</copyright>
 		<licenseUrl>
-			https://www.eclipse.org/legal/epl-v10.html
+			https://github.com/java-decompiler/jd-eclipse/blob/master/LICENSE
 		</licenseUrl>
 		<requireLicenseAcceptance>
 			true
@@ -37,17 +37,11 @@
 		<projectSourceUrl>
 			https://github.com/java-decompiler/jd-eclipse
 		</projectSourceUrl>
-		<docsUrl>
-			http://help.eclipse.org/
-		</docsUrl>
-		<mailingListUrl>
-			http://www.eclipse.org/mail/
-		</mailingListUrl>
 		<bugTrackerUrl>
-			https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EPP&amp;component=jee-package
+			https://github.com/java-decompiler/jd-eclipse/issues
 		</bugTrackerUrl>
 		<tags>
-			eclipse java-ee ide java
+			eclipse java decompiler plugin
 		</tags>
 		<summary>
 			Java Code Coverage for Eclipse
