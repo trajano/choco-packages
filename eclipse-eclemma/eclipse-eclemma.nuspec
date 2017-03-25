@@ -47,7 +47,7 @@
 			https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EPP&amp;component=jee-package
 		</bugTrackerUrl>
 		<tags>
-			eclipse java-ee ide java
+			eclipse java coverage plugin
 		</tags>
 		<summary>
 			Java Code Coverage for Eclipse
