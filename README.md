@@ -33,7 +33,7 @@ The package name (which is listed in `appveyor.yml` and the title the pull reque
 The following is a list of my packages and how they differ from the [Chocolatey community maintained packages][].
 
 * `corsair-cue2` Corsair CUE2. **This package is not in [Chocolatey community maintained packages]**
-* `eclipse` uses Neon.3 (i.e. 4.6.3) puts the code into `C:\ProgramFiles\Chocolatey\lib\eclipse`, sets the JVM to use the DLL in `jdk` package.
+* `eclipse` uses a more current version of Eclipse and puts the code into `C:\ProgramFiles\Chocolatey\lib\eclipse`, sets the JVM to use the DLL in `jdk` package.
 * `eclipse-eclemma` depends on `eclipse` and puts the necessary files into the `dropins` folder.  This provides a sample of how to add plugins into an Eclipse installation.  **This package is not in [Chocolatey community maintained packages]**
 * `jd-eclipse` depends on `eclipse` and puts the necessary files into the `dropins` folder.  This provides a sample of how to add plugins into an Eclipse installation.  **This package is not in [Chocolatey community maintained packages]**
 * `geforce-game-ready-driver` uses the approach of changing the configuration file rather than deleting the folders and prevents the GeForce Experience, NVidia Update, NView and 3D Vision from being installed.
