@@ -10,8 +10,12 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-# Only keep theplugins folder
-Remove-Item (Join-Path $env:chocolateyPackageFolder "eclipse\*") -Recurse -Exclude "plugins"
+# Only keep the plugins folder
+Get-ChildItem -Path (Join-Path $env:chocolateyPackageFolder "eclipse") -Recurse |
+  Select -ExpandProperty FullName |
+  Where { $_ -notlike (Join-Path $env:chocolateyPackageFolder "eclipse\plugins") + "*" } |
+  Sort length -Descending |
+  Remove-Item -Force
 
 # Create link file in dropins
 ("path=" + $env:chocolateyPackageFolder ) -replace '\\', '/' | Out-File  -Encoding ASCII (Join-Path $env:ChocolateyInstall "lib/eclipse/eclipse/dropins/${env:chocolateyPackageName}.link")
