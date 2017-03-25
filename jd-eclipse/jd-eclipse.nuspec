@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<id>
+			jd-eclipse
+		</id>
+		<version>
+			1.0.0
+		</version>
+		<packageSourceUrl>
+			https://github.com/trajano/choco-packages
+		</packageSourceUrl>
+		<owners>
+			Archimedes Trajano
+		</owners>
+		<title>
+			EclEmma
+		</title>
+		<authors>
+			Eclipse Foundation
+		</authors>
+		<projectUrl>
+			http://jd.benow.ca/
+		</projectUrl>
+		<iconUrl>
+			http://cdn.rawgit.com/trajano/choco/master/eclipse/eclipse.ico
+		</iconUrl>
+		<copyright>
+			2017
+		</copyright>
+		<licenseUrl>
+			https://www.eclipse.org/legal/epl-v10.html
+		</licenseUrl>
+		<requireLicenseAcceptance>
+			true
+		</requireLicenseAcceptance>
+		<projectSourceUrl>
+			https://github.com/java-decompiler/jd-eclipse
+		</projectSourceUrl>
+		<docsUrl>
+			http://help.eclipse.org/
+		</docsUrl>
+		<mailingListUrl>
+			http://www.eclipse.org/mail/
+		</mailingListUrl>
+		<bugTrackerUrl>
+			https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EPP&amp;component=jee-package
+		</bugTrackerUrl>
+		<tags>
+			eclipse java-ee ide java
+		</tags>
+		<summary>
+			Java Code Coverage for Eclipse
+		</summary>
+		<description>
+			EclEmma is a free Java code coverage tool for Eclipse, available under the Eclipse Public License. It brings code coverage analysis directly into the Eclipse workbench:
+
+			* Fast develop/test cycle: Launches from within the workbench like JUnit test runs can directly be analyzed for code coverage.
+			* Rich coverage analysis: Coverage results are immediately summarized and highlighted in the Java source code editors.
+			* Non-invasive: EclEmma does not require modifying your projects or performing any other setup.
+		</description>
+		<dependencies>
+			<dependency id="eclipse" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>

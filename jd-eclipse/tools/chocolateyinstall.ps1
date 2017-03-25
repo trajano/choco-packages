@@ -3,8 +3,8 @@ $packageArgs = @{
   packageName   = $env:chocolateyPackageName
   unzipLocation = (Join-Path $env:chocolateyPackageFolder "eclipse")
 
-  url           = "http://download.eclipselab.org/eclemma/release/eclemma-${env:chocolateyPackageVersion}.zip"
-  checksum      = 'a5ec12fda5389fcf4a22ed63a17d1f11'
+  url           = "https://github.com/java-decompiler/jd-eclipse/releases/download/v${env:chocolateyPackageVersion}/jd-eclipse-site-${env:chocolateyPackageVersion}-RC2.zip"
+  checksum      = ''
   checksumType  = 'md5'
 }
 
