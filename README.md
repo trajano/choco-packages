@@ -5,7 +5,7 @@ Chocolatey Packages
 
 These are Chocolatey packages that I wrote to manage some of my tools.
 
-** THIS DOES NOT PROVIDE ANY OFFICIALLY MAINTAINED CHOCOLATEY PACKAGES **
+**THIS DOES NOT PROVIDE ANY OFFICIALLY MAINTAINED CHOCOLATEY PACKAGES**
 
 I am not a package maintainer for Chocolatey please use the official channels for the packages.
 
