@@ -14,7 +14,7 @@ I am not a package maintainer for Chocolatey please use the official channels fo
 1. Clone this repository
 2. Install choco
 3. Run `.\pack.ps1` in a Powershell prompt to create the packages and add the source
-4. `choco install <package name>` to install 
+4. `choco install -s . <package name>` to install.  Most of the packages didn't bother with checksums so you may need to do `choco install --ignore-checksums -s . <package name>`.
 5. `choco uninstall <package name>` to uninstall
 
 ## Adding to appveyor.yml
