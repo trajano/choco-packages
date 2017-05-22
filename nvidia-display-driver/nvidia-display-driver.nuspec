@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 	<metadata>
 		<id>
-			geforce-game-ready-driver
+			nvidia-display-driver
 		</id>
 		<title>
 			Geforce Game Ready Driver
 		</title>
 		<version>
-			378.92
+			382.05
 		</version>
 		<authors>
 			NVIDIA
