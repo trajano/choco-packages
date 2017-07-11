@@ -5,7 +5,7 @@
 			eclipse
 		</id>
 		<version>
-			4.6.3
+			5.0.0
 		</version>
 		<packageSourceUrl>
 			https://github.com/trajano/choco-packages
@@ -20,7 +20,7 @@
 			Eclipse Foundation
 		</authors>
 		<projectUrl>
-			http://www.eclipse.org/neon/
+			http://www.eclipse.org/oxygen/
 		</projectUrl>
 		<iconUrl>
 			http://cdn.rawgit.com/trajano/choco/master/eclipse/eclipse.ico
