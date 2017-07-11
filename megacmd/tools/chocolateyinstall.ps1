@@ -3,7 +3,7 @@ $packageArgs = @{
     packageName   = $env:chocolateyPackageName
     unzipLocation = $env:chocolateyPackageFolder
     url = 'https://mega.nz/MEGAcmdSetup.exe'
-    checksum      = '350320ca4a9d2e4ee8be4e6d9f262be91d70e03344baaa1cf5d71dde662a12453262604ee44a0d5e9d29c347f9752424e68c1c4419b2969f9a7294ffea02e5c0'
+    checksum      = ''
     checksumType  = 'sha512'
 }
 

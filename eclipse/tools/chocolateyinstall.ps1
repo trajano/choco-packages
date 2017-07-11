@@ -6,11 +6,11 @@ $packageArgs = @{
   unzipLocation = $env:chocolateyPackageFolder
   softwareName  = 'eclipse*'
 
-  url           = 'http://download.eclipse.org/technology/epp/downloads/release/oxygen/R/eclipse-jee-oxygen-R-win32.zip'
+  url           = 'https://download.eclipse.org/technology/epp/downloads/release/oxygen/R/eclipse-jee-oxygen-R-win32.zip'
   checksum      = ''
   checksumType  = 'sha512'
 
-  url64bit      = 'http://download.eclipse.org/technology/epp/downloads/release/oxygen/R/eclipse-jee-oxygen-R-win32-x86_64.zip'
+  url64bit      = 'https://download.eclipse.org/technology/epp/downloads/release/oxygen/R/eclipse-jee-oxygen-R-win32-x86_64.zip'
   checksum64    = ''
   checksumType64= 'sha512'
 }
