@@ -6,12 +6,12 @@ $packageArgs = @{
   unzipLocation = $env:chocolateyPackageFolder
   softwareName  = 'eclipse*'
 
-  url           = 'http://download.eclipse.org/technology/epp/downloads/release/oxygen/R/eclipse-jee-oxygen-R-win32.zip'
-  checksum      = 'd6410343b13f21e5c9aa034d2f290a54b023dc959a685cb376c7928a540c4c397aa66e8c2c4bf690e620883fbcbcb5059066252079c83339d4692b337458bac7'
+  url           = 'http://download.eclipse.org/technology/epp/downloads/release/oxygen/1/eclipse-jee-oxygen-1-win32.zip'
+  checksum      = '3f40b7061f693edd7b73a021610ebb121ca776b8cc2fe5aa19b5d3d107651ee57d122e5c6b280e95492b3bfee36efc7870ca64e15b2fccc9ed53ae7a2da564ef'
   checksumType  = 'sha512'
 
-  url64bit      = 'http://download.eclipse.org/technology/epp/downloads/release/oxygen/R/eclipse-jee-oxygen-R-win32-x86_64.zip'
-  checksum64    = '43838d488c2f1f64c36f0a0c0672b2554a46eca6a462d6a0a14c5340dd10bc3827385828149d277d61fcd7afe9538b4af68c860bec61f390641480ce4ae10452'
+  url64bit      = 'http://download.eclipse.org/technology/epp/downloads/release/oxygen/1/eclipse-jee-oxygen-1-win32-x86_64.zip'
+  checksum64    = '65f3dac56406c506bb719538cc3395b18ab0e71a0352170ad77a311d1c5cdb431254c688a1ee79f138bd746ac7560386873ba74037cab1710bc5172cc9d1731a'
   checksumType64= 'sha512'
 }
 
